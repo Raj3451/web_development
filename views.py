@@ -36,7 +36,7 @@ def main(request):
     template = loader.get_template('main.html')
     return HttpResponse(template.render())
     
-def testing(request):
+def testing(request):  # this view is just for testing the project.
     template = loader.get_template('template.html')
     context = {
         'fruits':['Apple','Banana','Cherry'],
